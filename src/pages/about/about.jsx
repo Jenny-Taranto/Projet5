@@ -1,16 +1,12 @@
 import React from "react"
-import Header from "../../components/header/header"
+import Banner from "../../components/banner/Banner"
 
 function About() {
     return (
         <>
-            <Header />
-            <Banner />
-            <Dropdown />
-            <Dropdown />
-            <Dropdown />
-            <Dropdown />
-            <Footer />
+            <main>
+                <Banner />
+            </main>
         </>
     )
 }

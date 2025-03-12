@@ -1,17 +1,17 @@
 import React from "react"
 import Banner from "../../components/banner/Banner"
-import Footer from "../../components/footer/Footer"
+import Card from "../../components/card/Card"
+import lodgings from "../../data/lodging.json"
 
-function Home () {
+function Home() {
   return (
     <>
-      <main>
-        <Banner texte="Chez vous, partout et ailleurs" />
-        <section>
-             
-        </section>
-      </main>
-      <Footer />
+      <Banner />
+      <div className="cards-container">
+        {lodgings.map(lodging => (
+          <Card key={lodging.id} image={lodging.cover} title={lodging.title} />
+        ))}
+      </div>
     </>
   );
 };

@@ -11,14 +11,14 @@ import './styles/App.scss'
 function App() {
   return (
     <BrowserRouter>
-      <Header />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/lodging/:id" element={<Lodging />} />
-        <Route path="/about" element={<About />} />
-        <Route path="*" element={<Error />} />
-      </Routes>
-      <Footer />
+        <Header />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/lodging/:id" element={<Lodging />} />
+          <Route path="/about" element={<About />} />
+          <Route path="*" element={<Error />} />
+        </Routes>
+        <Footer />
     </BrowserRouter>
   );
 };

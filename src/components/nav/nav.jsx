@@ -1,11 +1,11 @@
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
 function Nav() {
     return (
-<nav>
-    <Link to='/'>Accueil</Link>
-    <Link to=''>A Propos</Link>
-</nav>
+        <nav>
+            <NavLink to='/' className={({ isActive }) => isActive ? "active" : ""}>Accueil</NavLink>
+            <NavLink to='/about' className={({ isActive }) => isActive ? "active" : ""}>A Propos</NavLink>
+        </nav>
     )
 }
 

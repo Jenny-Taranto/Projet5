@@ -1,8 +1,12 @@
 @use "./Header.scss";
+@use "./Footer.scss";
+@use "./Banner.scss";
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 #root {
   max-width: 1440px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+}
+
+body {
+  font-family: 'Montserrat'
 }
