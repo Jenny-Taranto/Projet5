@@ -1,5 +1,25 @@
 .card {
   max-width: 340px;
   max-height: 340px;
+  position: relative;
   display: flex;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 10px;
+
+  img {
+    object-fit: cover;
+    position: relative;
+  }
+
+  h2 {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    font-size: 18px;
+    color: white;
+    align-self:flex-end;
+    height:auto;
+    width: 130px
+  }
 }
