@@ -3,7 +3,7 @@ main {
   justify-content: center
 }
 
-.home-banner {
+.banner {
   position: relative;
   max-height: 225px;
   max-width: 1240px;
@@ -22,7 +22,7 @@ main {
 
   }
   
-  h1 {
+  .title {
     position: absolute;
     color: white;
     font-size: 48px;
@@ -34,4 +34,3 @@ main {
     1px  1px 0 black; ;
   }
 }
-

@@ -1,9 +1,9 @@
 import React from "react"
 
-function Collapse() {
+function Collapse({ title }) {
     return (
 <div className="collapse">
-    <span>Fiabilité</span><img src="public/Vector.svg" alt="icône flèche"/>
+    <span>{title}</span><img src="public/Vector.svg" alt="icône flèche" className="icon"/>
 </div>
     )
 }

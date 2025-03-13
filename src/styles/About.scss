@@ -1,3 +1,7 @@
 .collapses-group {
-    gap: 45px
+    display:flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }

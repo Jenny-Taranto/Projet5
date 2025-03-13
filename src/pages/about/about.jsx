@@ -1,17 +1,18 @@
 import React from "react"
-import AboutBanner from "../../components/about-banner/AboutBanner"
+import Banner from "../../components/banner/Banner"
 import Collapse from "../../components/collapse/Collapse"
+import collapses from "../../data/collapses-content.json"
 
 function About() {
     return (
-        <>
             <main>
-                <AboutBanner />
+                <Banner url="src/assets/kalen-emsley-Bkci_8qcdvQ-unsplash 2.png"/>
                 <div className="collapses-group">
-                    <Collapse />
+                {collapses.map(collapse => (
+                    <Collapse key={collapse.id} title={collapse.title} />
+                ))}
                 </div>
             </main>
-        </>
     )
 }
 

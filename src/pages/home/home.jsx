@@ -4,10 +4,12 @@ import Card from "../../components/card/Card"
 import lodgings from "../../data/lodging.json"
 
 
+
+
 function Home() {
   return (
       <main>
-        <Banner />
+        <Banner url="src/assets/IMG.png" title="Chez vous, partout et ailleurs" />
         <div className="gallery">
           {lodgings.map(lodging => (
             <Card key={lodging.id} image={lodging.cover} title={lodging.title} />
