@@ -1,9 +1,20 @@
-.gallery {
-    max-width: 1240px;
-    background-color: #F6F6F6;
-    border-radius: 25px;
+main {
+    width: 100%;
     display: flex;
-    flex-wrap: wrap;
-    gap: 50px;
-    padding: 45px 22px 45px 22px;
+    flex-direction: column;
+    align-items: center;
+
+    .gallery {
+        box-sizing: border-box;
+        max-width: 1240px;
+        background-color: #F6F6F6;
+        border-radius: 25px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:baseline;
+        gap: 60px;
+        padding: 50px
+    }
 }

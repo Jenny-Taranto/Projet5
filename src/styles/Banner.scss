@@ -27,6 +27,11 @@ main {
     color: white;
     font-size: 48px;
     font-weight: 700;
+    text-shadow:
+    -1px -1px 0 black,  
+    1px -1px 0 black,
+   -1px  1px 0 black,
+    1px  1px 0 black; ;
   }
 }
 
