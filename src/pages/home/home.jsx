@@ -6,7 +6,6 @@ import lodgings from "../../data/lodging.json"
 
 function Home() {
   return (
-    <>
       <main>
         <Banner />
         <div className="gallery">
@@ -15,7 +14,6 @@ function Home() {
           ))}
         </div>
       </main>
-    </>
   );
 };
 
