@@ -1,11 +1,15 @@
 import React from "react"
-import Banner from "../../components/banner/Banner"
+import AboutBanner from "../../components/about-banner/AboutBanner"
+import Collapse from "../../components/collapse/Collapse"
 
 function About() {
     return (
         <>
             <main>
-                <Banner />
+                <AboutBanner />
+                <div className="collapses-group">
+                    <Collapse />
+                </div>
             </main>
         </>
     )

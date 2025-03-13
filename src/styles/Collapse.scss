@@ -1,0 +1,22 @@
+.collapse {
+  box-sizing:border-box;
+  background-color: #FF6060;
+  height: 54px;
+  width: 1024px;
+  max-width: 1024px;
+  border-radius: 5px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  span {
+    font-size: 24px;
+    font-weight: 700;
+    color:white
+  }
+
+  .icon {
+    height: 14px
+  }
+}
