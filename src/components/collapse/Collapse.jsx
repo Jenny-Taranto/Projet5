@@ -9,7 +9,7 @@ function Collapse({ title, text }) {
     return (
         <>
             <div className="collapse-header">
-                <span>{title}</span><img src="public/Vector.svg" alt="icône flèche" className={`icon ${isOpen ? "rotated" : ""}`} onClick={handleClick} />
+                <span>{title}</span><img src="/Vector.svg" alt="icône flèche" className={`icon ${isOpen ? "rotated" : ""}`} onClick={handleClick} />
             </div>
             <p className={`collapse-content`} style={{ transform: isOpen ? 'scaleY(1)' : 'scaleY(0)' }}>{text}</p>
         </>

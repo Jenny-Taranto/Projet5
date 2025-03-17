@@ -1,0 +1,18 @@
+.host-container {
+  max-height: 64px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.host-name {
+  font-size: 18px;
+  color:#FF6060;
+  margin: 0;
+}
+
+.host-picture {
+  width: 64px;
+  height:64px;
+  border-radius: 100px;
+}

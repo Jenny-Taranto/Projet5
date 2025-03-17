@@ -1,0 +1,37 @@
+.slideshow {
+  width: 100%;
+  max-width: 1240px;
+  max-height: 415px;
+  height: 415px;
+  border-radius: 25px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  overflow: hidden;
+
+  img {
+ object-fit: cover;
+ width: 100%;
+ height: 100%;
+ transition: transform 0.5s ease-in-out;
+  }
+
+  .previous, .next {
+    position: absolute;
+    background-color:transparent;
+    height: 80px;
+    border: none;
+    cursor: pointer;
+  }
+  .previous {
+    left: 10px;
+  }
+
+  .next {
+    right: 10px;
+  }
+
+}
+
