@@ -18,7 +18,7 @@ main {
 
   img {
     object-fit: cover;
-    opacity: 0.6;
+    opacity: 0.4;
 
   }
   
@@ -31,6 +31,15 @@ main {
     -1px -1px 0 black,  
     1px -1px 0 black,
    -1px  1px 0 black,
-    1px  1px 0 black; ;
+    1px  1px 0 black,
+    3px 3px 10px rgba(0, 0, 0, 0.7);
   }
+}
+
+.about-banner .banner {
+  box-shadow: none;
+}
+
+.about-banner .banner img {
+  opacity: 0.7;
 }

@@ -28,6 +28,9 @@ function Slideshow({pictures}) {
             <button className="previous" onClick={prevSlide}>
                 <img src="/slide-previous.png" alt="flèche précédent"/>
             </button>
+            <div className="image-counter">
+          {currentIndex + 1}/{pictures.length}
+        </div>
             <button className="next" onClick={nextSlide}>
                 <img src="/slide-next.png" alt="flèche suivant" />
             </button>

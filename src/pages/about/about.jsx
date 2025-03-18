@@ -5,14 +5,16 @@ import collapses from "../../data/collapses-content.json"
 
 function About() {
     return (
-            <main>
+        <main>
+            <div className="about-banner">
                 <Banner url="src/assets/kalen-emsley-Bkci_8qcdvQ-unsplash 2.png" />
-                <div className="collapses-group">
+            </div>
+            <div className="collapses-group">
                 {collapses.map(collapse => (
                     <Collapse key={collapse.id} title={collapse.title} text={collapse.text} />
                 ))}
-                </div>
-            </main>
+            </div>
+        </main>
     )
 }
 
