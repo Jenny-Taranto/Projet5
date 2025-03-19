@@ -20,3 +20,16 @@ footer {
     font-size: 24px;
   }
 }
+
+@media (min-width: 375px), screen {
+  footer {
+    width: 100%;
+  }
+
+  footer p {
+    font-size: 12px;
+    width: 100px;
+    margin-top: 0;
+    margin-bottom: 50px;
+  }
+}

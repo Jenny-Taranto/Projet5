@@ -23,6 +23,10 @@ function Lodging() {
     return null;
   }
 
+  const equipmentList = lodging.equipments.map((equipment, index) => (
+    <li key={index}>{equipment}</li>
+  ));
+
   return (
     <main>
       <Slideshow pictures={lodging.pictures} />
@@ -42,7 +46,7 @@ function Lodging() {
           <Collapse title="Description" text={lodging.description} />
         </div>
         <div className="collapse-container">
-          <Collapse title="Équipements" text={lodging.equipments} />
+          <Collapse title="Équipements" text={<ul>{equipmentList}</ul>} />
         </div>
       </div>
     </main>

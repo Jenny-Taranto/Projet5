@@ -48,3 +48,19 @@
 
 }
 
+@media (min-width: 375px), screen {
+  main {
+    width: 100%;
+    box-sizing: border-box;
+  }
+ 
+  .slideshow {
+    height: 255px;
+    width: 100%;
+
+    button img {
+      height: 20px;
+      width: 15px;
+    }
+  }
+}
