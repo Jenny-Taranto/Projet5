@@ -38,3 +38,10 @@
     z-index: 2;
   }
 }
+
+@media (max-width: 375px) {
+  .card {
+    width: 335px;
+    height: 225px;
+  }
+}
