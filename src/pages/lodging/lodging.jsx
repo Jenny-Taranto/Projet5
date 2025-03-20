@@ -28,18 +28,21 @@ function Lodging() {
   ));
 
   return (
-    <main>
+    <main className="main-lodging">
       <Slideshow pictures={lodging.pictures} />
-      <div className="group title-host">
-        <div className="lodging-title">
-          <h1>{lodging.title}</h1>
-          <p>{lodging.location}</p>
+      <div className="information">
+        <div className="group information-main">
+          <div className="lodging-title">
+            <h1>{lodging.title}</h1>
+            <p>{lodging.location}</p>
+            <Tags tags={lodging.tags} />
+          </div>
+
         </div>
+        <div className="group information-secondary">
         <Host host={lodging.host} />
-      </div>
-      <div className="group tags-rating">
-        <Tags tags={lodging.tags} />
-        <Rating rating={lodging.rating} />
+          <Rating rating={lodging.rating} />
+        </div>
       </div>
       <div className="collapse-section">
         <div className="collapse-container">

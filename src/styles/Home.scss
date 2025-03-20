@@ -1,4 +1,4 @@
-main {
+.main-home {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -20,7 +20,7 @@ main {
 }
 
 @media (max-width: 375px) {
-    header, main {
+    header, .main-home {
         padding: 20px;
     }
 }

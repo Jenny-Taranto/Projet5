@@ -1,7 +1,11 @@
-main {
+.main-lodging {
     max-width: 1240px;
     margin: 0 auto;
     flex-direction: column;
+
+    .information {
+        display: flex;
+    }
 
     .group {
         display: flex;
@@ -10,7 +14,7 @@ main {
         width: 100%;
     }
 
-    .title-host {
+    .information-main {
         margin-top: 30px;
         align-items: center;
 
@@ -41,7 +45,7 @@ main {
         }
     }
 
-    .tags-rating {
+    .information-secondary {
         margin-top: 30px;
 
 
@@ -108,28 +112,28 @@ main {
         width: 100%;
     }
 
-    .group.title-host {
+    .group.information-main {
         margin-top: 15px;
     }
 
-    .group.title-host .lodging-title h1 {
+    .group.information-main .lodging-title h1 {
         font-size: 18px;
     }
 
-    .group.title-host .lodging-title p {
+    .group.information-main .lodging-title p {
         font-size: 14px;
     }
 
-    .group.title-host .host-container p {
+    .group.information-main .host-container p {
         font-size: 12px;
     }
 
-    .group.title-host .host-container img {
+    .group.information-main .host-container img {
         height: 32px;
         width: 32px;
     }
 
-    .group.tags-rating .tags-group span {
+    .group.information-secondary .tags-group span {
         font-size: 10px;
         height: 20px;
         box-sizing: border-box;

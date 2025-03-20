@@ -8,7 +8,7 @@ import { Link } from "react-router-dom"
 
 function Home() {
   return (
-    <main>
+    <main className="main-home">
       <div className="home-banner">
         <Banner url="src/assets/IMG.png" title="Chez vous, partout et ailleurs" />
       </div>
