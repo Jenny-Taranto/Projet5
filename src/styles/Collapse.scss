@@ -1,58 +1,52 @@
-.collapse-header {
-  border-radius: 5px;
-  box-sizing:border-box;
-  background-color: #FF6060;
-  height: 54px;
-  padding: 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  .collapse-header {
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: #FF6060;
+    height: 54px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
 
-  span {
-    font-size: 24px;
-    font-weight: 700;
-    color:white
-  }
-
-  .icon {
-    height: 14px;
-    cursor: pointer;
-    transition: transform 400ms ease-in-out;
-
-    &.rotated {
-      transform: rotate(-180deg);
+    span {
+      font-size: 24px;
+      font-weight: 700;
+      color: white
     }
 
+    .icon {
+      height: 14px;
+      cursor: pointer;
+      transition: transform 400ms ease-in-out;
+
+      &.rotated {
+        transform: rotate(-180deg);
+      }
+
+    }
+    }
+  
+
+  .collapse-content {
+    font-size: 18px;
+    font-weight: 400;
+    background-color: #f2f2f2;
+    color: black;
+    margin-bottom: 20px;
+    margin-top: 0;
+    padding: 0 20px;
+    border-radius: 0 0 5px 5px;
+    transition: max-height 0.2s ease-out, opacity 0.1s ease-out, padding 0.3s ease-out;
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    object-fit: cover;
+
+    &.open {
+      opacity: 1;
+      max-height: 500px;
+      padding: 20px;
+    }
 
   }
-}
-
-.collapse-content {
-  font-size: 18px;
-  font-weight: 400;
-  background-color: #f2f2f2;
-  color: black;
-  margin-bottom: 20px;
-  margin-top: 0;
-  padding: 0 20px;
-  border-radius: 0 0 5px 5px;
-  transition: max-height 0.4s ease-out, opacity 0.1s ease-out, padding 0.3s ease-out;
-  opacity: 0;
-  max-height: 0;
-  overflow:hidden;
-  object-fit: cover;
-
-  &.open {
-    opacity: 1;
-    max-height: 500px;
-    padding: 20px;
-  }
-
-}
-
-@media (min-width: 375px), screen {
-  .collapse-header {
-    font-size: 13px;
-  }
-}

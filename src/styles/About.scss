@@ -4,3 +4,38 @@
     margin-top: 40px;
     margin-bottom: 20px;
 }
+
+@media (max-width: 375px) {
+    main {
+        width: 375px;
+        box-sizing: border-box;
+        padding-bottom: 0;
+        padding-top: 0;
+
+        .about-banner.banner {
+            height: 111px;
+        }
+
+        .collapses-group {
+            width: 100%;
+            margin-top: 20px;
+            margin-bottom: 0;
+
+            .collapse-header span {
+                font-size: 13px;
+                height: 30px;
+                margin-top: 13px;
+                margin-bottom: 0;
+            }
+
+            .collapse-header img {
+                height: 9px;
+                width: 16px;
+            }
+            
+            .collapse-content.open {
+                font-size: 12px;
+            }
+        }
+    }
+}

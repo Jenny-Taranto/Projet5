@@ -21,7 +21,8 @@ footer {
   }
 }
 
-@media (min-width: 375px), screen {
+
+@media (max-width: 375px) {
   footer {
     width: 100%;
   }

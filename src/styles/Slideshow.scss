@@ -48,7 +48,8 @@
 
 }
 
-@media (min-width: 375px), screen {
+
+@media (max-width: 375px) {
   main {
     width: 100%;
     box-sizing: border-box;

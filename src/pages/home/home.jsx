@@ -9,7 +9,7 @@ import { Link } from "react-router-dom"
 function Home() {
   return (
     <main>
-      <div clasName="home-banner">
+      <div className="home-banner">
         <Banner url="src/assets/IMG.png" title="Chez vous, partout et ailleurs" />
       </div>
       <div className="gallery">
