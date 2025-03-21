@@ -1,14 +1,21 @@
 .main-about {
-    flex-direction: column;
     align-items: center;
     margin: 0;
+    padding: 0 100px 0 100px;
 }
 
 .collapses-group {
-    width: 1024px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     max-width: 1024px;
     margin-top: 40px;
     margin-bottom: 20px;
+    padding: 0 108px 0 108px;
+
+    .collapse-header {
+        width: 100%;
+    }
 }
 
 @media (max-width: 375px) {
@@ -16,16 +23,18 @@
         width: 375px;
         box-sizing: border-box;
         padding-bottom: 0;
-        padding-top: 0;
+        padding: 20px 20px 0 20px;
 
         .about-banner.banner {
             height: 111px;
+            width: 100%;
         }
 
         .collapses-group {
             width: 100%;
             margin-top: 20px;
             margin-bottom: 0;
+            padding: 0;
 
             .collapse-header span {
                 font-size: 13px;

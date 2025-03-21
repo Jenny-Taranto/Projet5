@@ -31,15 +31,14 @@ function Lodging() {
     <main className="main-lodging">
       <Slideshow pictures={lodging.pictures} />
       <div className="information">
-        <div className="group information-main">
-          <div className="lodging-title">
+        <div className="information-main">
+          <div className="title-tags">
             <h1>{lodging.title}</h1>
             <p>{lodging.location}</p>
             <Tags tags={lodging.tags} />
           </div>
-
         </div>
-        <div className="group information-secondary">
+        <div className="information-secondary">
         <Host host={lodging.host} />
           <Rating rating={lodging.rating} />
         </div>

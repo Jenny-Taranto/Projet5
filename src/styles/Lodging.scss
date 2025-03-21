@@ -4,21 +4,16 @@
     flex-direction: column;
 
     .information {
-        display: flex;
-    }
-
-    .group {
+        width: 100%;
         display: flex;
         justify-content: space-between;
-        align-items: center;
-        width: 100%;
     }
 
     .information-main {
         margin-top: 30px;
         align-items: center;
 
-        .lodging-title {
+        .title-tags {
             flex: 1;
 
             h1 {
@@ -32,9 +27,17 @@
                 font-size: 18px;
                 color: black;
                 margin-top: 5px;
-                margin-bottom: 0;
+                margin-bottom: 20px;
             }
         }
+    }
+
+    .information-secondary {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 30px;
 
         .host-container {
             display: flex;
@@ -43,11 +46,6 @@
             width: 200px;
             margin: 0;
         }
-    }
-
-    .information-secondary {
-        margin-top: 30px;
-
 
         .tags-group {
             display: flex;
@@ -65,109 +63,75 @@
         }
     }
 
-    .collapse-section {
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
-        gap: 20px;
-        margin-top: 20px;
-        margin-bottom: 30px;
-
-        .collapse-container {
-            flex: 1;
-            max-width: 50%;
-        }
-
-        .collapse-container .collapse-header span {
-            font-size: 18px;
-        }
-
-        .collapse-content ul {
-            list-style-type: none;
-            padding-left: 0;
-            margin: 0;
-        }
-    }
-
-}
-
 @media (max-width: 375px) {
 
-    .group,
-    .collapse-section {
+    .information {
         flex-direction: column;
-        align-items: flex-start;
-        width: 100%;
     }
 
-    .group>*,
-    .collapse-container {
-        max-width: 100%;
-        width: 100%;
-    }
-
-    .rating,
     .host-container {
         justify-content: flex-start;
         width: 100%;
     }
-
-    .group.information-main {
+  
+    .information-main {
         margin-top: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        .title-tags {
+            height: 70px;
+        }
+
+        .title-tags h1 {
+            font-size: 18px;
+            color:#FF6060;
+            font-weight: 500;
+            margin-bottom:0;
+        }
+
+        .title-tags p {
+            font-size: 14px;
+            margin: 0;
+            color:black;
+            text-align:start;
+            margin: 5px 0 5px 0;
+        }
     }
 
-    .group.information-main .lodging-title h1 {
-        font-size: 18px;
+    .information-secondary {
+        flex-direction: row-reverse;
+        margin-top: 0;
+        align-items: center;
+        margin-bottom: 15px;
+        gap: 0;
     }
 
-    .group.information-main .lodging-title p {
-        font-size: 14px;
+    .host-container {
+        width: 100%;
     }
 
-    .group.information-main .host-container p {
+    .host-name {
         font-size: 12px;
+        height: 33px;
     }
-
-    .group.information-main .host-container img {
+  
+    .host-picture {
         height: 32px;
         width: 32px;
     }
 
-    .group.information-secondary .tags-group span {
+    .tags-group {
+        flex-wrap:wrap;
+        margin-bottom: 10px;
+    }
+  
+    .tags-group span {
         font-size: 10px;
-        height: 20px;
         box-sizing: border-box;
+        margin: 0;
     }
-
-    .rating img {
-        height: 16px;
-        width: 16px;
-    }
-
-    .collapse-section {
-        gap: 0;
-    }
-
-    .collapse-section .collapse-container {
-        width: 100%;
-    }
-
-    .collapse-header {
-        height: 30px;
-        padding: 0 15px 0 15px;
-    }
-
-    .collapse-section .collapse-container .collapse-header span {
-        font-size: 13px;
-
-    }
-
-    .collapse-section .collapse-container .collapse-header img {
-        width: 16px;
-        height: 9px;
-    }
-
-    .collapse-section .collapse-container .collapse-content.open {
-        font-size: 12px;
-    }
+  
+}
 }
