@@ -25,12 +25,14 @@ footer {
 @media (max-width: 375px) {
   footer {
     width: 100%;
+
+    p {
+      font-size: 12px;
+      width: 100px;
+      margin-top: 0;
+      margin-bottom: 50px;
+    }
   }
 
-  footer p {
-    font-size: 12px;
-    width: 100px;
-    margin-top: 0;
-    margin-bottom: 50px;
-  }
+
 }

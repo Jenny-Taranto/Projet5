@@ -12,3 +12,16 @@
   padding: 5px 30px 5px 30px;
   
 }
+
+@media (max-width: 375px) {
+    .tags-group {
+        flex-wrap:wrap;
+        margin-bottom: 10px;
+
+        span {
+            font-size: 10px;
+            box-sizing: border-box;
+            margin: 0;
+        }
+    }
+}
