@@ -1,7 +1,7 @@
 @use "./Nav.scss";
 
 header {
-  padding: 45px 0 45px 0;
+  padding: 45px 100px 45px 100px;
   display: flex;
   align-items: center;
   justify-content: space-between
@@ -17,7 +17,8 @@ header {
 
     img {
       height: 46px;
-      width: 145px;
+      max-width: 145px;
+      width: 100%;
     }
 
     nav {
