@@ -1,6 +1,5 @@
-import { useEffect } from "react";
 import React from "react";
-import { useParams, useNavigate } from "react-router-dom";
+import { useParams, Navigate } from "react-router-dom";
 import Slideshow from "../../components/slideshow/Slideshow";
 import Host from "../../components/host/Host";
 import Rating from "../../components/rating/Rating";
@@ -10,17 +9,10 @@ import lodgings from "../../data/lodging.json";
 
 function Lodging() {
   const { id } = useParams();
-  const navigate = useNavigate();
   const lodging = lodgings.find((item) => item.id === id);
 
-  useEffect(() => {
-    if (!lodging) {
-      navigate("*");
-    }
-  }, [lodging, navigate]);
-
   if (!lodging) {
-    return null;
+    return <Navigate to="/NotFound" />
   }
 
   const equipmentList = lodging.equipments.map((equipment, index) => (

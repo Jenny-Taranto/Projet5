@@ -3,10 +3,6 @@ import React, { useState } from "react";
 function Slideshow({ pictures }) {
     const [currentIndex, setCurrentIndex] = useState(0);
 
-    if (!pictures || pictures.length === 0) {
-        return <p className="error-message">Aucune image disponible</p>;
-    }
-
     const prevSlide = () => {
         setCurrentIndex((prevIndex) =>
             prevIndex === 0 ? pictures.length - 1 : prevIndex - 1
