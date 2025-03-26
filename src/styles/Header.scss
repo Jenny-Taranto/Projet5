@@ -1,12 +1,26 @@
 @use "./Nav.scss";
 
 header {
-  padding: 45px 100px 45px 100px;
+  padding: 45px 20px 45px 20px;
   display: flex;
   align-items: center;
-  justify-content: space-between
+  max-width: 1240px;
+  margin: 0 auto;
+
+  nav {
+    width: 100%;
+    justify-content: flex-end;
+  }
+
 }
 
+@media (max-width: 500px) {
+    header img  {
+      height: 46px;
+      max-width: 145px;
+      width: auto;
+    }
+}
 
 @media (max-width: 375px) {
 
@@ -18,18 +32,18 @@ header {
     img {
       height: 46px;
       max-width: 145px;
-      width: 100%;
+      width: auto;
     }
 
     nav {
       align-items: center;
       gap: 26px;
       justify-content: flex-end;
-  
+
       a {
         font-size: 12px;
-        text-transform : uppercase;
+        text-transform: uppercase;
       }
-  }
+    }
   }
 }

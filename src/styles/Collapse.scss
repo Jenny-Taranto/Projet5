@@ -1,4 +1,13 @@
-  .collapse-header {
+.collapse-section {
+  display: flex;
+  gap: 60px;
+
+  .collapse-container {
+    flex: 1;
+  }
+}
+
+.collapse-header {
     border-radius: 5px;
     box-sizing: border-box;
     background-color: #FF6060;
@@ -11,7 +20,8 @@
     span {
       font-size: 24px;
       font-weight: 700;
-      color: white
+      color: white;
+      margin-top: 0;
     }
 
     .icon {
@@ -22,7 +32,6 @@
       &.rotated {
         transform: rotate(-180deg);
       }
-
     }
   }
 
@@ -45,12 +54,28 @@
       opacity: 1;
       max-height: 500px;
       padding: 20px;
+      
+      ul {
+        list-style-type: none;
+        padding-left: 0;
+        margin: 0;
+
+      }
     }
 
   }
 
-  @media (max-width: 375px) {
+  @media (max-width: 500px) {
 
+    .collapse-section {
+      gap: 30px;
+    }
+    .collapse-header span {
+      font-size: 16px
+    }
+  }
+
+  @media (max-width: 375px) {
 
     .collapse-section {
       display: flex;
@@ -86,13 +111,6 @@
 
         .collapse-content {
           font-size: 12px;
-
-          ul {
-            list-style-type: none;
-            padding-left: 0;
-            margin: 0;
-
-          }
         }
       }
     }

@@ -18,11 +18,15 @@
     }
 }
 
-
+@media (max-width: 800px) {
+    .main-about .collapses-group {
+        padding: 0 50px 0 50px;
+    }
+}
 
 @media (max-width: 375px) {
     .main-about {
-        width: 375px;
+        width: 100%;
         box-sizing: border-box;
         padding-bottom: 0;
         padding: 20px 20px 0 20px;

@@ -3,6 +3,8 @@
     margin: 0 auto;
     display: flex;
     flex-direction: column;
+    padding-right: 20px;
+    padding-left: 20px;
 
     .information {
         width: 100%;
@@ -30,6 +32,10 @@
                     margin-top: 5px;
                     margin-bottom: 20px;
                 }
+
+                .tag {
+                    margin-top: 0;
+                }
             }
         }
 
@@ -48,6 +54,15 @@
         }
     }
 }
+
+@media (max-width: 500px) {
+    .main-lodging .information .information-main .title-tags h1 {
+        font-size: 20px;
+    }
+
+    
+}
+
 
 @media (max-width: 375px) {
     .main-lodging {
