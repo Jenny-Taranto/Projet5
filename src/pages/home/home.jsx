@@ -10,7 +10,7 @@ function Home() {
   return (
     <main className="main-home">
       <div className="home-banner">
-        <Banner url="src/assets/IMG.png" title="Chez vous, partout et ailleurs" />
+        <Banner url="src/assets/IMG.png" title={"Chez vous,\npartout et ailleurs"} />
       </div>
       <div className="gallery">
         {lodgings.map(lodging => (

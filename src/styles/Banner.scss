@@ -1,9 +1,3 @@
-.main-home {
-  display: flex;
-  justify-content: center;
-  margin: 0;
-}
-
 .banner {
   position: relative;
   max-height: 225px;
@@ -51,6 +45,12 @@
   opacity: 0.7;
 }
 
+@media (max-width: 768px) {
+  .banner .title {
+    white-space: pre-line;
+  }
+}
+
 @media (max-width: 375px) {
 
   .banner {
@@ -64,9 +64,7 @@
   }
 
   .home-banner{
-    padding-left: 20px;
-    padding-right: 20px;
-    width: 375px;
+    width: 100%;
     box-sizing: border-box;
 }
 
