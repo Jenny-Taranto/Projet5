@@ -1,3 +1,5 @@
+import React from "react"
+
 function Banner({ url, title }) {
   return (
     <div className="banner">

@@ -1,3 +1,5 @@
+import React from "react"
+
 function Host({ host }) {
     return (
         <div className="host-container">
