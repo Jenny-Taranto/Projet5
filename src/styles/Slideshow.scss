@@ -2,7 +2,7 @@
   width: 100%;
   max-width: 1240px;
   max-height: 415px;
-  height: 415px;
+  height: 100%;
   border-radius: 25px;
   position: relative;
   display: flex;
@@ -48,6 +48,11 @@
 
 }
 
+@media (max-width: 768px) {
+  .slideshow {
+    height: 300px;
+  }
+}
 
 @media (max-width: 375px) {
   .main-lodging {

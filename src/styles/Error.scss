@@ -21,7 +21,8 @@ main {
     font-size: 36px;
     font-weight: 500;
     margin-top: 80px;
-    margin-bottom: 80px
+    margin-bottom: 80px;
+    text-align: center;
   }
 
   a {
@@ -32,12 +33,23 @@ main {
   }
 }
 
+@media (max-width: 768px) {
+  main {
+    span {
+      font-size: 132px;
+    }
 
+    p {
+      font-size: 28px;
+      padding: 0 20px;
+    }
+  }
+}
 
 @media (max-width: 375px) {
   main {
     box-sizing: border-box;
-    width: 375px;
+    width: 100%;
 
     span {
       font-size: 96px;
